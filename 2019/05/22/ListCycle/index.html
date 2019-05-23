@@ -17,7 +17,7 @@
 <li>使用remove()将迭代器新近返回的元素删除</li>
 </ul>
 <blockquote>
-<p>有了Iterator就不必为集合中元素的数量操心了，那是有hashNext()和next()关心的事情。<br>如果你只是向前遍历List，并不打算修改List对象本身，那么你可以看到forEach语法会显得更加简洁。<br>Iterator还可以移除由next()产生的最后一个元素，这意味着在调用remove()之前必须先调用next()。</p>
+<p>有了Iterator就不必为集合中元素的数量操心了，那是由hashNext()和next()关心的事情。<br>如果你只是向前遍历List，并不打算修改List对象本身，那么你可以看到forEach语法会显得更加简洁。<br>Iterator还可以移除由next()产生的最后一个元素，这意味着在调用remove()之前必须先调用next()。</p>
 </blockquote>
 <pre><code>摘自《Java编程思想（第四版）》
 </code></pre><p>List和Set都有iterator方法获得Iterator，但是对于List来说，也可以通过listIterator()来获取迭代器，ListIterator是Iterator的子类型，功能更加强大。</p>
